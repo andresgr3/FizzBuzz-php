@@ -4,16 +4,16 @@ namespace Deg540\CleanCodeKata9;
 class FizzBuzz
 {
     function execute(int $number): string {
-
-        if($number % 3 === 0 && $number % 5 === 0){
-            return "FizzBuzz";
+        $result = "";
+        if($number % 3 === 0){
+            $result .= "Fizz";
         }
-        if ($number % 3 === 0){
-            return "Fizz";
-        }
+        
         if($number % 5 === 0){
-            return "Buzz";
+            $result .= "Buzz";
         }
-        return (string) $number;
+
+        return empty($result) ? (string) $number : $result;
+
     }
 }
