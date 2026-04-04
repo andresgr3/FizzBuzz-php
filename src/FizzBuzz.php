@@ -10,6 +10,9 @@ class FizzBuzz
         if($number === 5){
             return "Buzz";
         }
+        if($number === 15){
+            return "FizzBuzz";
+        }
         return (string) $number;
     }
 }
