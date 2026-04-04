@@ -12,11 +12,24 @@ final class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    
+
     public function givenThreeReturnFizz(){
         $fizzBuzz = new FizzBuzz();
+
         $result = $fizzBuzz->execute(3);
+
         $this->assertEquals("Fizz", $result);
+    }
+
+    /**
+     * @test
+     */
+    public function givenFiveReturnBuzz(){
+        $fizzBuzz = new FizzBuzz();
+
+        $result = $fizzBuzz->execute(5);
+
+        $this->assertEquals("Buzz", $result);
 
     }
 }
