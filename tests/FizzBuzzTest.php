@@ -29,7 +29,16 @@ final class FizzBuzzTest extends TestCase
         $integerValue = $fizzbuzz->getWordForNumber(2);
 
         $this->assertEquals($integerValue, "2");
+    }
 
+    /**
+     * @test
+     */
+    public function forNumerThreeReturnFizz(){
+        $fizzbuzz = new FizzBuzz();
 
+        $integerValue = $fizzbuzz->getWordForNumber(3);
+
+        $this->assertEquals($integerValue, "Fizz");
     }
 }
