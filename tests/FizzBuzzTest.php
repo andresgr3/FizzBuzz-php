@@ -4,45 +4,20 @@ declare(strict_types=1);
 
 namespace Deg540\CleanCodeKata9\Test;
 
-use Deg540\CleanCodeKata9\Example;
+use Deg540\CleanCodeKata9\FizzBuzz;
 use PHPUnit\Framework\TestCase;
 
-final class ExampleTest extends TestCase
+final class FizzBuzzTest extends TestCase
 {
-
     /**
      * @test
      */
-    public function trueAssertion()
-    {
-        $example = new Example();
+    public function forNumberOneReturnStringOne(){
+        $fizzbuzz = new FizzBuzz();
 
-        $integerValue = $example->integerChecker(1);
+        $integerValue = $fizzbuzz->getWordForNumber(1);
 
-        $this->assertTrue($integerValue);
-    }
+        $this->assertEquals($integerValue, "1");
 
-    /**
-     * @test
-     */
-    public function falseAssertion()
-    {
-        $example = new Example();
-
-        $integerValue = $example->integerChecker('1');
-
-        $this->assertFalse($integerValue);
-    }
-
-    /**
-     * @test
-     */
-    public function equalsAssertion()
-    {
-        $example = new Example();
-
-        $integerValue = $example->integerChecker(1);
-
-        $this->assertEquals(true, $integerValue);
     }
 }
