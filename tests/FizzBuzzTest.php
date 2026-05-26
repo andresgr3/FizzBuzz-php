@@ -18,6 +18,18 @@ final class FizzBuzzTest extends TestCase
         $integerValue = $fizzbuzz->getWordForNumber(1);
 
         $this->assertEquals($integerValue, "1");
+    }
+
+    /**
+     * @test
+     */
+    public function forNumerTwoReturnStringTwo(){
+        $fizzbuzz = new FizzBuzz();
+
+        $integerValue = $fizzbuzz->getWordForNumerTwo(2);
+
+        $this->assertEquals($integerValue, "2");
+
 
     }
 }
