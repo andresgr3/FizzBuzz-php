@@ -41,4 +41,15 @@ final class FizzBuzzTest extends TestCase
 
         $this->assertEquals($integerValue, "Fizz");
     }
+
+    /**
+     * @test
+     */
+    public function fotNumberFiveReturnBuzz(){
+        $fizzbuzz = new FizzBuzz();
+
+        $integerValue = $fizzbuzz->getWordForNumber(5);
+
+        $this->assertEquals($integerValue, "Buzz");
+    }
 }
