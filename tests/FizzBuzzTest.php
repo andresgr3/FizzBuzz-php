@@ -26,7 +26,7 @@ final class FizzBuzzTest extends TestCase
     public function forNumerTwoReturnStringTwo(){
         $fizzbuzz = new FizzBuzz();
 
-        $integerValue = $fizzbuzz->getWordForNumerTwo(2);
+        $integerValue = $fizzbuzz->getWordForNumber(2);
 
         $this->assertEquals($integerValue, "2");
 
